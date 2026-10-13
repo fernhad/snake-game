@@ -1,6 +1,6 @@
 {
-  "name": "Snake",
-  "short_name": "Snake",
+  "name": "Anto-Snake",
+  "short_name": "Anto-Snake",
   "description": "A simple classic snake game",
   "start_url": "./index.html",
   "scope": "./",
