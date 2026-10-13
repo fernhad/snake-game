@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#0f172a" />
 <meta name="mobile-web-app-capable" content="yes" />
-<title>Snake</title>
+<title>Snake-game</title>
 <link rel="manifest" href="manifest.webmanifest" />
 <link rel="icon" type="image/png" href="icons/icon-192.png" />
 <style>
@@ -90,12 +90,25 @@
   .down { grid-area: down; }
   .left { grid-area: left; }
   .right { grid-area: right; }
+
+  .catalogue {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background: #334155;
+    color: #f8fafc;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    touch-action: manipulation;
+  }
+  .catalogue:active { background: #4ade80; color: #0f172a; }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>Nyoka yaAnto</h1>
+  <h1>Snake-YaAnto</h1>
   <div class="stats">
     <div>Score<b id="score">0</b></div>
     <div>Best<b id="best">0</b></div>
@@ -116,6 +129,8 @@
   <button class="right" data-x="1" data-y="0" aria-label="Right">▶</button>
   <button class="down" data-x="0" data-y="1" aria-label="Down">▼</button>
 </div>
+
+<a class="catalogue" href="https://fernhad.github.io/catalogue-site/" target="_blank" rel="noopener">Catalogue</a>
 
 <script>
 const COLS = 20;
